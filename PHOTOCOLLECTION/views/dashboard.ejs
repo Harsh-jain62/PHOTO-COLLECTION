@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+        form {
+            margin: 0px 10px;
+        }
+
+        h2 {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+
+        .container {
+            max-width: 360px;
+        }
+
+        .divider {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .divider hr {
+            margin: 7px 0px;
+            width: 35%;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <form action='/registration/contactsubmit' method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <h2>ADD Contact</h2>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Name"> name</label>
+                            <input id="frdname" name="frdname" type="text" maxlength="50" class="form-control" required >
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Email">Email</label>
+                            <input id="frdemail" name="frdemail" type="email" maxlength="50" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="contactnumber">Contact Number</label>
+                            <input id="frdcontactnumber" name="frdcontactnumber" type="number" maxlength="10"
+                                class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Relationship">Relationship</label>
+                            <input id="frdrelationship" name="frdrelationship" type="text" maxlength="25" class="form-control"
+                                length="40" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Description">Description</label>
+                            <input id="frddescription" name="frddescription" type="text" maxlength="100"
+                                class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Description">File1</label>
+                            <input id="file1" name="file1" type="file"  class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="Description">File2</label>
+                            <input id="file2" name="file2" type="file"  class="form-control" required>
+                        
+                        <div class="form-group">
+                            <button id="signupSubmit" type="submit" class="btn btn-info btn-block">
+                            submit
+                            </button>
+                        </div>
+                      
+                     
+
+                        <hr>
+                        <p></p>Already have an account? <a href="/registration/displayall">Display List</a></p>
+                        
+                       
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+</body>
+
+</html>
+
+<!------ Include the above in your HEAD tag ---------->
